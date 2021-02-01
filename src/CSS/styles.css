@@ -1,0 +1,291 @@
+
+html, body {
+  scroll-behavior: smooth;
+
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Spartan', sans-serif;
+}
+
+p {
+  font-family: 'Spartan', sans-serif;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+:root {
+  --white: #fff;
+}
+
+.top--offset {
+  margin-top: 95px;
+}
+
+.area-100 {
+  margin-top: 100px;
+}
+
+.area-150 {
+  margin-top: 150px;
+}
+
+.area-200 {
+  margin-top: 200px;
+}
+
+/* AREA BOTTOM */
+.area--b-100 {
+  margin-bottom: 100px;
+}
+
+.area--b-150 {
+  margin-bottom: 150px;
+}
+
+.area--b-200 {
+  margin-bottom: 150px;
+}
+
+.dark--text {
+  color: #000;
+}
+
+.header {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  height: 95px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.header--logo {
+  font-size: 50px;
+  font-weight: 700;
+  color: #000;
+}
+
+
+.header--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header--nav {
+  display: flex;
+  width: auto;
+  margin-right: 10%;
+}
+
+.navbar-link {
+  margin-left: 16px;
+}
+
+
+@media screen and (max-width: 509px) {
+  .header {
+    height: auto;
+  }
+
+  .header--wrapper {
+    flex-direction: column;
+  }
+}
+
+.banner {
+  background-image: url('../IMG/fundo1.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.banner--box {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 30%;
+  height: calc(100vh - 70px);
+  margin: 0 0 5em 3em;
+}
+
+.banner--button {
+  position: relative;
+  background: #fff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  height: 48px;
+  text-decoration: none;
+  padding: 0 2em;
+  margin: 1em 0;
+  transition: 0.2s ease-in-out;
+  z-index: 5;
+}
+
+.banner--button:before {
+  background: #fff;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: pulse 1.5s infinite;
+  z-index: 1;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 564px) {
+  .banner--box {
+    align-items: center;
+    max-width: 100%;
+    margin: 0 !important;
+  }
+
+
+}
+
+.about--title {
+  position: relative;
+  font-weight: 400;
+}
+
+.about--title:before {
+  content: "Moderno";
+  color: #000;
+  font-size: 72px;
+  font-weight: 900;
+  position: absolute;
+  bottom: 0;
+  left: -50%;
+  opacity: 0.1;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about--row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.about--image-left,
+.about--image-right {
+  background: #c4c4c4;
+  width: 45%;
+  height: 300px;
+}
+
+.about--image-left {
+  background-image: url('../IMG/PIX.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+.nav-color{
+  color: green
+}.text-bg{
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  text-shadow:#000 1px -1px, #000 -1px 1px, #000 1px 1px, #000 -1px -1px
+}
+.about--wrapper {
+  max-width: 30%;
+  margin: auto;
+}
+
+.about--row-text {
+  margin: auto;
+}
+
+@media screen and (max-width: 564px) {
+  .about--title:before {
+    font-size: 50px;
+  }
+
+  .about--row {
+    flex-direction: column;
+    margin: 1em 0;
+  }
+
+  .about--row:last-child {
+    flex-direction: column-reverse;
+  }
+
+  .about--image-left,
+  .about--image-right {
+  width: 100%;
+  }
+
+  .about--wrapper {
+    max-width: 90%;
+  }
+}
+
+.commitment {
+  background: #cc4;
+  height: calc(100vh - 95px);
+
+}
+
+.commitment--box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 4em;
+}
+
+.footer {
+  background: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:30px;
+}
+
+.footer--title {
+  margin: 0;
+}
+
+
+.login--image {
+  width: 500px;
+  height: 500px;
+}
+
